@@ -1,0 +1,53 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sf-ui-display;
+}
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.Home-Content-Box {
+  background-image: url("/BGs/HomeBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input::placeholder {
+  font-family: sf-ui-display;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.slick-dots {
+  margin-bottom: -30px !important;
+}
+.slick-dots li {
+  width: 25px !important;
+  height: 25px !important;
+}
+.slick-dots li button {
+  width: 25px !important;
+  height: 25px !important;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 36px;
+  background-color: #fe72a1 !important;
+}
+.slick-dots li button:before {
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 36px;
+  content: "" !important;
+}
+.slick-dots li.slick-active button{
+  background-color: #FFCDF5 !important;
+  box-shadow: -2px -2px 5px #FFFFFF, 2px 2px 5px rgba(168, 64, 150, 0.4), inset 0px 2px 5px rgba(168, 64, 150, 0.25), inset -2px -2px 5px #F4BBEB !important;
+}
