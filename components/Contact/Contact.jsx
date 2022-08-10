@@ -13,7 +13,7 @@ function Contact() {
 
   return (
     <>
-      <Box sx={{ width: '100%', height: { md: '100vh', xs: 'auto' }, display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', overflow: 'hidden', py: { md: 0, xs: 0 }, px: { md: 0, xs: 3 } }} >
+      <Box sx={{ width: '100%', height: { md: '100vh', xs: 'auto' },minHeight:{md:'auto',xs:"100vh"}, display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', overflow:'auto', py: { md: 0, xs: 3}, px: { md: 0, xs: 3 } }} >
 
         {/* Content Box */}
         <Box className={'Home-Content-Box'} sx={{ width: '100%', height: '100%', minHeight: { md: 'unset', xs: '100vh' }, display: 'flex', flexDirection: { lg: 'row', xs: 'column' }, justifyContent: 'center', alignItems: 'center', position: 'relative' }} >
