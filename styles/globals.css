@@ -15,6 +15,7 @@ a {
   background-image: url("/BGs/HomeBG.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 input::placeholder {
   font-family: sf-ui-display;

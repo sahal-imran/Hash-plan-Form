@@ -9,15 +9,15 @@ function Contact() {
   const [UIUX, Sey_UIUX] = useState(false);
   const [Web, Set_Web] = useState(false);
 
-  const { Interested_IN, Ste_Interested_IN } = useState(null);
+  const { Interested_IN, Set_Interested_IN } = useState(null);
 
   return (
     <>
-      <Box sx={{ width: '100%', height: { md: '100vh', xs: 'auto' },minHeight:{md:'auto',xs:"100vh"}, display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', overflow:'auto', py: { md: 0, xs: 3}, px: { md: 0, xs: 3 } }} >
+      <Box sx={{ width: '100%', height: { md: '100vh', xs: 'auto' }, minHeight: { md: 'auto', xs: "100vh" }, display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', overflow: 'hidden', py: { md: 0, xs: 6 }, px: { md: 0, xs: 3 } }} >
 
         {/* Content Box */}
         <Box className={'Home-Content-Box'} sx={{ width: '100%', height: '100%', minHeight: { md: 'unset', xs: '100vh' }, display: 'flex', flexDirection: { lg: 'row', xs: 'column' }, justifyContent: 'center', alignItems: 'center', position: 'relative' }} >
-          <Typography sx={{ fontSize: '40px', lineHeight: '40px', fontFamily: ['sf-ui-display'], fontWeight: 700, mb: 4, display: { md: 'none', xs: 'block' } }} >Lets hatch a plane</Typography>
+          <Typography sx={{ fontSize: '40px', lineHeight: '40px', fontFamily: ['sf-ui-display'], fontWeight: 700, mb: 4, display: { md: 'none', xs: 'block' },textAlign:'center' }} >Lets hatch a plane</Typography>
 
 
           {/* Left Egg section */}
@@ -32,25 +32,25 @@ function Contact() {
             {/* For desktop */}
             <Typography sx={{ fontSize: '40px', lineHeight: '40px', fontFamily: ['sf-ui-display'], fontWeight: 700, display: { md: 'block', xs: 'none ' }, mb: 4 }} >Lets hatch a plane</Typography>
             <Box sx={{ width: { md: '80%', xs: '100%' }, height: '56px', border: '1px solid rgba(216, 216, 216, 1)', borderRadius: '18px', overflow: 'hidden', background: '#FFFFFF', boxShadow: '0px 4px 40px rgba(0, 0, 0, 0.25)' }} >
-              <input style={{ type: 'text', width: '100%', height: '100%', border: 'none', outline: 'none', fontSize: '15px', fontWeight: 400, color: 'rgba(0, 0, 0, 0.5)', paddingLeft: '20px' }} placeholder='your name'></input>
+              <input style={{ type: 'text', width: '100%', height: '100%', border: 'none', outline: 'none', fontSize: '15px', fontWeight: 400, color: 'rgba(0, 0, 0, 0.5)', padding: '0px 20px',background:'transparent',borderRadius: '18px' }} placeholder='your name'></input>
             </Box>
             <Box sx={{ width: { md: '80%', xs: '100%' }, height: '56px', border: '1px solid rgba(216, 216, 216, 1)', borderRadius: '18px', overflow: 'hidden', background: '#FFFFFF', boxShadow: '0px 4px 40px rgba(0, 0, 0, 0.25)', mt: { md: 2.5, xs: 2 } }} >
-              <input style={{ type: 'text', width: '100%', height: '100%', border: 'none', outline: 'none', fontSize: '15px', fontWeight: 400, color: 'rgba(0, 0, 0, 0.5)', paddingLeft: '20px' }} placeholder="Your Email" ></input>
+              <input style={{ type: 'text', width: '100%', height: '100%', border: 'none', outline: 'none', fontSize: '15px', fontWeight: 400, color: 'rgba(0, 0, 0, 0.5)', padding: '0px 20px',background:'transparent',borderRadius: '18px' }} placeholder="Your Email" ></input>
             </Box>
             <Box sx={{ width: { md: '80%', xs: '100%' }, height: '56px', border: '1px solid rgba(216, 216, 216, 1)', borderRadius: '18px', overflow: 'hidden', background: '#FFFFFF', boxShadow: '0px 4px 40px rgba(0, 0, 0, 0.25)', mt: { md: 2.5, xs: 2 } }} >
-              <input style={{ type: 'text', width: '100%', height: '100%', border: 'none', outline: 'none', fontSize: '15px', fontWeight: 400, color: 'rgba(0, 0, 0, 0.5)', paddingLeft: '20px' }} placeholder="Details about your project" ></input>
+              <input style={{ type: 'text', width: '100%', height: '100%', border: 'none', outline: 'none', fontSize: '15px', fontWeight: 400, color: 'rgba(0, 0, 0, 0.5)', padding: '0px 20px',background:'transparent',borderRadius: '18px' }} placeholder="Details about your project" ></input>
             </Box>
             <Typography sx={{ fontFamily: ['sf-ui-display'], fontSize: '20px', lineHeight: '18px', fontWeight: 600, color: 'rgba(0, 0, 0, 1)', mt: 3, alignSelf: "start" }} >Interested in</Typography>
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: { md: 'row', xs: 'column' }, width: { md: '80%', xs: '100%' }, mt: { md: 2.5, xs: 2 } }}>
               <Button onClick={() => {
                 Sey_UIUX(true);
                 Set_Web(false);
-              }} variant="contained" sx={UIUX ? { fontSize: '15px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, width: { md: '40%', xs: '100%' }, height: '50px', whiteSpace: 'nowrap', background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)', borderRadius: '18px', mr: { md: 3 }, color: 'white', textTransform: 'none', boxShadow: 'none', "&:hover": { background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)' },mr:{md:1} } : { fontSize: '15px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, width: { md: '40%', xs: '100%' }, height: '50px', whiteSpace: 'nowrap', background: '#DDD9FF', overflow: 'hidden', borderRadius: '18px', mr: { md: 3 }, color: ' #000000', textTransform: 'none', boxShadow: 'none', "&:hover": { background: '#DDD9FF' },mr:{md:1} }}>UI/UX design</Button>
+              }} variant="contained" sx={UIUX ? { fontSize: '15px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, width: { md: '40%', xs: '100%' }, height: '50px', whiteSpace: 'nowrap', background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)', borderRadius: '18px', mr: { md: 3 }, color: 'white', textTransform: 'none', boxShadow: 'none', "&:hover": { background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)' }, mr: { md: 1 } } : { fontSize: '15px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, width: { md: '40%', xs: '100%' }, height: '50px', whiteSpace: 'nowrap', background: '#DDD9FF', overflow: 'hidden', borderRadius: '18px', mr: { md: 3 }, color: ' #000000', textTransform: 'none', boxShadow: 'none', "&:hover": { background: '#DDD9FF' }, mr: { md: 1 } }}>UI/UX design</Button>
 
               <Button onClick={() => {
                 Sey_UIUX(false);
                 Set_Web(true);
-              }} variant="contained" sx={Web ? { fontSize: '15px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, width: { md: '60%', xs: '100%' }, height: '50px', whiteSpace: 'nowrap', background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)', borderRadius: '18px', mr: { md: 3 }, color: ' white', textTransform: 'none', boxShadow: 'none', "&:hover": { background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)' },ml:{md:1},mt:{md:0,xs:2} } : { fontSize: '15px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, width: { md: '60%', xs: '100%' }, height: '50px', whiteSpace: 'nowrap', background: '#DDD9FF', overflow: 'hidden', borderRadius: '18px', mr: { md: 3 }, color: ' #000000', textTransform: 'none', boxShadow: 'none', "&:hover": { background: '#DDD9FF' },ml:{md:1},mt:{md:0,xs:2} }}>UI/UX design</Button>
+              }} variant="contained" sx={Web ? { fontSize: '15px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, width: { md: '60%', xs: '100%' }, height: '50px', whiteSpace: 'nowrap', background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)', borderRadius: '18px', mr: { md: 3 }, color: ' white', textTransform: 'none', boxShadow: 'none', "&:hover": { background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)' }, ml: { md: 1 }, mt: { md: 0, xs: 2 } } : { fontSize: '15px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, width: { md: '60%', xs: '100%' }, height: '50px', whiteSpace: 'nowrap', background: '#DDD9FF', overflow: 'hidden', borderRadius: '18px', mr: { md: 3 }, color: ' #000000', textTransform: 'none', boxShadow: 'none', "&:hover": { background: '#DDD9FF' }, ml: { md: 1 }, mt: { md: 0, xs: 2 } }}>UI/UX design</Button>
             </Box>
             <Typography sx={{ fontSize: '20px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, color: 'rgba(0, 0, 0, 1)', mt: 4 }} >Budget</Typography>
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: { md: '80%', xs: '100%' }, mt: 2 }}>

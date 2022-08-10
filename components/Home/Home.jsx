@@ -24,7 +24,7 @@ const settings = {
 function Home() {
   return (
     <>
-      <Box sx={{ width: '100%', height:{md:'100vh',xs:'auto'},minHeight:{md:'auto',xs:"100vh"}, display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative',overflow:'hidden' }} >
+      <Box sx={{ width: '100%', height:{md:'100vh',xs:'auto'},minHeight:{md:'auto',xs:"100vh"}, display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative',overflow:'hidden',py:{md:0,xs:6} }} >
 
         {/* Content Box */}
         <Box className={'Home-Content-Box'} sx={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', position: 'relative' }} >
