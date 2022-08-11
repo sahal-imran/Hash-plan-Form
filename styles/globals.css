@@ -17,6 +17,10 @@ a {
   background-size: cover;
   background-position: center;
 }
+.grad{
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+}
 input::placeholder {
   font-family: sf-ui-display;
   font-size: 15px;
