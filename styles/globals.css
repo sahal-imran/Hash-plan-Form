@@ -12,12 +12,12 @@ a {
   text-decoration: none;
 }
 .Home-Content-Box {
-  background-image: url("/BGs/HomeBG.jpg");
+  background-image: url("/BGs/BG.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.grad{
+.grad {
   -webkit-filter: blur(100px);
   filter: blur(100px);
 }
@@ -52,9 +52,10 @@ input::placeholder {
   border-radius: 36px;
   content: "" !important;
 }
-.slick-dots li.slick-active button{
-  background-color: #FFCDF5 !important;
-  box-shadow: -2px -2px 5px #FFFFFF, 2px 2px 5px rgba(168, 64, 150, 0.4), inset 0px 2px 5px rgba(168, 64, 150, 0.25), inset -2px -2px 5px #F4BBEB !important;
+.slick-dots li.slick-active button {
+  background-color: #ffcdf5 !important;
+  box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px rgba(168, 64, 150, 0.4),
+    inset 0px 2px 5px rgba(168, 64, 150, 0.25), inset -2px -2px 5px #f4bbeb !important;
 }
 ::-webkit-scrollbar {
   width: 4px !important;
@@ -65,6 +66,14 @@ input::placeholder {
   border-radius: 12px;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #A196FF 0%, #5E46FE 100%);
+  background: linear-gradient(180deg, #a196ff 0%, #5e46fe 100%);
   border-radius: 12px !important;
+}
+@media screen and (max-width: 900px) {
+  .Home-Content-Box {
+    background-image: url("/BGs/MobileBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
