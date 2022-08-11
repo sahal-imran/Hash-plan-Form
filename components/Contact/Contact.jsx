@@ -69,14 +69,14 @@ function Contact() {
 
 
         {/* Background Gradient spots */}
-        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: { md: '69px', xs: '-26px' }, top: { md: '100px', xs: '0px' }, background: '#FE72A1' }} ></Box>
-        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: { md: '400px', xs: '-120px' }, top: { md: '90px', xs: '-125px' }, background: { md: '#FE72A1', xs: 'white' } }} ></Box>
-        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: '400px', top: '324px', background: '#B4D8FC', display: { md: 'block', xs: 'none' } }} ></Box>
-        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: { md: '120px', xs: '-30px' }, top: { md: '324px', xs: '200px' }, background: '#B4D8FC', }} ></Box>
-        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: { md: '0px', xs: '-95px' }, top: { md: '520px', xs: '440px' }, background: '#FFB152', }} ></Box>
-        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: '480px', top: '500px', background: '#FFB152', }} ></Box>
-        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: '440px', bottom: '-60px', background: '#FC70E4', display: { md: 'block', xs: 'none' } }} ></Box>
-        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: { md: '60px', xs: '-80px' }, bottom: { md: '-30px', xs: '0px' }, background: '#FC70E4'}} ></Box>
+        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: { md: '69px', xs: '-26px' }, top: { md: '100px', xs: '0px' }, backgroundColor: '#FE72A1',zIndex:2 }} ></Box>
+        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: { md: '400px', xs: '-120px' }, top: { md: '90px', xs: '-125px' }, backgroundColor: { md: '#FE72A1', xs: 'white' } }} ></Box>
+        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: '400px', top: '324px', backgroundColor: '#B4D8FC', display: { md: 'block', xs: 'none' } }} ></Box>
+        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: { md: '120px', xs: '-30px' }, top: { md: '324px', xs: '200px' }, backgroundColor: '#B4D8FC', }} ></Box>
+        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: { md: '0px', xs: '-95px' }, top: { md: '520px', xs: '440px' }, backgroundColor: '#FFB152', }} ></Box>
+        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: '480px', top: '500px', backgroundColor: '#FFB152', }} ></Box>
+        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: '440px', bottom: '-60px', backgroundColor: '#FC70E4', display: { md: 'block', xs: 'none' } }} ></Box>
+        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: { md: '60px', xs: '-80px' }, bottom: { md: '-30px', xs: '0px' }, backgroundColor: '#FC70E4'}} ></Box>
       </Box>
 
 
