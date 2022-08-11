@@ -3,11 +3,13 @@ import { Box, Container } from '@mui/system';
 import Typography from '@mui/material/Typography';
 import Image from "next/image";
 import Button from '@mui/material/Button';
+import toast, { Toaster } from 'react-hot-toast';
 
 function Contact() {
 
   const [UIUX, Sey_UIUX] = useState(false);
   const [Web, Set_Web] = useState(true);
+  const notify = () => toast.success('Successfully toasted!');
 
   const TRueUIUX = (val) => {
     Sey_UIUX(true);
@@ -59,7 +61,8 @@ function Contact() {
             <Button variant="contained" sx={{ width: '20%', height: '50px', whiteSpace: 'nowrap', fontSize: '15px', lineHeight: '18px', fontWeight: 600, fontFamily: ['sf-ui-display'], background: '#DDD9FF', overflow: 'hidden', borderRadius: '18px', color: ' #000000', textTransform: 'unset', boxShadow: 'none', "&:hover": { background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)' }, mr: 2, display: { md: 'block', xs: 'none' } }}>$21-50k</Button>
             <Button variant="contained" sx={{ width: '20%', height: '50px', whiteSpace: 'nowrap', fontSize: '15px', lineHeight: '18px', fontWeight: 600, fontFamily: ['sf-ui-display'], background: '#DDD9FF', overflow: 'hidden', borderRadius: '18px', color: ' #000000', textTransform: 'unset', boxShadow: 'none', "&:hover": { background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)' }, display: { md: 'block', xs: 'none' } }}>$2-4k</Button>
           </Box>
-          <Button variant="contained" sx={{ width: { md: '80%', xs: '100%' }, height: '56px', whiteSpace: 'nowrap', mt: 4, fontSize: '26px', ml: 0.1, lineHeight: '40px', fontWeight: 700, fontFamily: ['sf-ui-display'], background: '#DDD9FF', overflow: 'hidden', borderRadius: '18px', color: ' #FFFFFF', textTransform: 'none', background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)', boxShadow: 'none', "&:hover": { background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', } }} >Submit now</Button>
+          <Button onClick={notify} variant="contained" sx={{ width: { md: '80%', xs: '100%' }, height: '56px', whiteSpace: 'nowrap', mt: 4, fontSize: '26px', ml: 0.1, lineHeight: '40px', fontWeight: 700, fontFamily: ['sf-ui-display'], background: '#DDD9FF', overflow: 'hidden', borderRadius: '18px', color: ' #FFFFFF', textTransform: 'none', background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)', boxShadow: 'none', "&:hover": { background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', } }} >Submit now</Button>
+          <Toaster />
         </Box>
       </Box>
     </>
