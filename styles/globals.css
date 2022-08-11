@@ -64,3 +64,8 @@ input::placeholder {
   background: linear-gradient(180deg, #A196FF 0%, #5E46FE 100%);
   border-radius: 12px !important;
 }
+@media screen and (max-width:900px) {
+  .Home-Content-Box {
+    /* background-image: unset; */
+  }
+}

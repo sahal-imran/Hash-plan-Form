@@ -69,7 +69,7 @@ function Contact() {
 
 
         {/* Background Gradient spots */}
-        <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: { md: '69px', xs: '-26px' }, top: { md: '100px', xs: '0px' }, background: '#FE72A1', filter: 'blur(100px)' }} ></Box>
+        <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: { md: '69px', xs: '-26px' }, top: { md: '100px', xs: '0px' }, background: '#FE72A1', filter:{md:'blur(100px)',xs:'blur(50px)'} }} ></Box>
         <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: { md: '400px', xs: '-120px' }, top: { md: '90px', xs: '-125px' }, background: { md: '#FE72A1', xs: 'white' }, filter: 'blur(100px)' }} ></Box>
         <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: '400px', top: '324px', background: '#B4D8FC', filter: 'blur(100px)', display: { md: 'block', xs: 'none' } }} ></Box>
         <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: { md: '120px', xs: '-30px' }, top: { md: '324px', xs: '200px' }, background: '#B4D8FC', filter: 'blur(100px)' }} ></Box>
