@@ -21,7 +21,7 @@ function Contact() {
   return (
     <>
       {/* Content Box */}
-      <Box className={'Home-Content-Box'} sx={{ width: '100%', height: '100vh', display: 'flex', flexDirection: { md: 'row', xs: 'column' }, justifyContent: 'center', alignItems: 'center', background: 'transparent', px: { md: 0, xs: 3 }, py: { md: 0, xs: 2 } }} >
+      <Box id={'Contact-Content-Box'} sx={{ width: '100%', height:{md:'100vh'},minHeight:{md:'unset',xs:'100vh'}, display: 'flex', flexDirection: { md: 'row', xs: 'column' }, justifyContent: 'center', alignItems: 'center', background: 'transparent', px: { md: 0, xs: 3 }, py: { md: 0, xs: 2 } }} >
         <Typography sx={{ fontSize: '40px', lineHeight: '40px', fontFamily: ['sf-ui-display'], fontWeight: 700, mb: 4, display: { md: 'none', xs: 'block' }, textAlign: 'center' }} >Lets hatch a plane</Typography>
 
 
