@@ -13,11 +13,11 @@ function Contact() {
 
   return (
     <>
-      <Box sx={{ width: '100%', height: { md: '100vh', xs: 'auto' }, minHeight: { md: 'auto', xs: "100vh" }, display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', overflow: 'hidden', py: { md: 0, xs: 6 }, px: { md: 0, xs: 3 } }} >
+      <Box sx={{ width: '100%', height: { md: '100vh', xs: 'auto' }, minHeight: { md: 'auto', xs: "100vh" }, display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', overflow: 'hidden', py: { md: 0, xs: 4 }, px: { md: 0, xs: 3 } }} >
 
         {/* Content Box */}
         <Box className={'Home-Content-Box'} sx={{ width: '100%', height: '100%', minHeight: { md: 'unset', xs: '100vh' }, display: 'flex', flexDirection: { lg: 'row', xs: 'column' }, justifyContent: 'center', alignItems: 'center', position: 'relative' }} >
-          <Typography sx={{ fontSize: '40px', lineHeight: '40px', fontFamily: ['sf-ui-display'], fontWeight: 700, mb: 4, display: { md: 'none', xs: 'block' },textAlign:'center' }} >Lets hatch a plane</Typography>
+          <Typography sx={{ fontSize: '40px', lineHeight: '40px', fontFamily: ['sf-ui-display'], fontWeight: 700, mb: 4, display: { md: 'none', xs: 'block' },textAlign:'center',position: 'relative', zIndex: 2, }} >Lets hatch a plane</Typography>
 
 
           {/* Left Egg section */}
@@ -50,7 +50,7 @@ function Contact() {
               <Button onClick={() => {
                 Sey_UIUX(false);
                 Set_Web(true);
-              }} variant="contained" sx={Web ? { fontSize: '15px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, width: { md: '60%', xs: '100%' }, height: '50px', whiteSpace: 'nowrap', background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)', borderRadius: '18px', mr: { md: 3 }, color: ' white', textTransform: 'none', boxShadow: 'none', "&:hover": { background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)' }, ml: { md: 1 }, mt: { md: 0, xs: 2 } } : { fontSize: '15px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, width: { md: '60%', xs: '100%' }, height: '50px', whiteSpace: 'nowrap', background: '#DDD9FF', overflow: 'hidden', borderRadius: '18px', mr: { md: 3 }, color: ' #000000', textTransform: 'none', boxShadow: 'none', "&:hover": { background: '#DDD9FF' }, ml: { md: 1 }, mt: { md: 0, xs: 2 } }}>UI/UX design</Button>
+              }} variant="contained" sx={Web ? { fontSize: '15px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, width: { md: '60%', xs: '100%' }, height: '50px', whiteSpace: 'nowrap', background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)', borderRadius: '18px', mr: { md: 3 }, color: ' white', textTransform: 'none', boxShadow: 'none', "&:hover": { background: 'linear-gradient(180deg, #A196FF 0%, #5E46FE 100%)', backdropFilter: 'blur(20px)' }, ml: { md: 1 }, mt: { md: 0, xs: 2 } } : { fontSize: '15px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, width: { md: '60%', xs: '100%' }, height: '50px', whiteSpace: 'nowrap', background: '#DDD9FF', overflow: 'hidden', borderRadius: '18px', mr: { md: 3 }, color: ' #000000', textTransform: 'none', boxShadow: 'none', "&:hover": { background: '#DDD9FF' }, ml: { md: 1 }, mt: { md: 0, xs: 2 } }}>UI/UX design + Web development</Button>
             </Box>
             <Typography sx={{ fontSize: '20px', lineHeight: '18px', fontFamily: ['sf-ui-display'], fontWeight: 600, color: 'rgba(0, 0, 0, 1)', mt: 4 }} >Budget</Typography>
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: { md: '80%', xs: '100%' }, mt: 2 }}>
@@ -68,14 +68,14 @@ function Contact() {
 
 
         {/* Background Gradient spots */}
-        <Box sx={{ width: '250px', height: '250px', position: 'absolute', left: '69px', top: '125px', background: '#FE72A1', filter: 'blur(100px)' }} ></Box>
-        <Box sx={{ width: '250px', height: '250px', position: 'absolute', right: '360px', top: '106px', background: '#FE72A1', filter: 'blur(100px)' }} ></Box>
-        <Box sx={{ width: '250px', height: '250px', position: 'absolute', left: '245px', top: '324px', background: '#B4D8FC', filter: 'blur(100px)' }} ></Box>
-        <Box sx={{ width: '250px', height: '250px', position: 'absolute', right: '200px', top: '324px', background: '#B4D8FC', filter: 'blur(100px)' }} ></Box>
-        <Box sx={{ width: '250px', height: '250px', position: 'absolute', left: '0px', top: '567px', background: '#FFB152', filter: 'blur(100px)' }} ></Box>
-        <Box sx={{ width: '250px', height: '250px', position: 'absolute', right: '360px', top: '540px', background: '#FFB152', filter: 'blur(100px)' }} ></Box>
-        <Box sx={{ width: '250px', height: '250px', position: 'absolute', left: '315px', bottom: '-60px', background: '#FC70E4', filter: 'blur(100px)' }} ></Box>
-        <Box sx={{ width: '250px', height: '250px', position: 'absolute', right: '10px', bottom: '-60px', background: '#FC70E4', filter: 'blur(100px)' }} ></Box>
+        <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: { md: '69px', xs: '-26px' }, top: { md: '100px', xs: '0px' }, background: '#FE72A1', filter: 'blur(100px)' }} ></Box>
+        <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right:{md:'400px',xs:'-120px'}, top: {md:'90px',xs:'-125px'}, background: { md: '#FE72A1', xs: 'white' }, filter: 'blur(100px)' }} ></Box>
+        <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: '400px', top: '324px', background: '#B4D8FC', filter: 'blur(100px)',display: { md: 'block', xs: 'none' } }} ></Box>
+        <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right:{md:'120px',xs:'-30px'}, top: {md:'324px',xs:'200px'}, background: '#B4D8FC', filter: 'blur(100px)' }} ></Box>
+        <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left:{md: '0px',xs:'-95px'}, top:{md:'520px',xs:'440px'}, background: '#FFB152', filter: 'blur(100px)' }} ></Box>
+        <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: '480px', top: '500px', background: '#FFB152', filter: 'blur(100px)' }} ></Box>
+        <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: '440px', bottom: '-60px', background: '#FC70E4', filter: 'blur(100px)', display: { md: 'block', xs: 'none' } }} ></Box>
+        <Box sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right:{md:'60px',xs:'-80px'}, bottom:{md:'-30px',xs:'0px'}, background: '#FC70E4', filter: 'blur(100px)' }} ></Box>
       </Box>
 
 
