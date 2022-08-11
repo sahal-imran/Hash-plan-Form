@@ -20,22 +20,22 @@ function Contact() {
 
   return (
     <>
-      <Box sx={{ width: '100%', height: { md: '100vh', xs: 'auto' }, minHeight: { md: 'auto', xs: "100vh" }, display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', overflow: 'hidden', py: { md: 0, xs: 2 }, px: { md: 0, xs: 3 } }} >
+      <Box sx={{ width: '100%', height: { md: '100vh', xs: 'auto' }, minHeight: { md: 'auto', xs: "100vh" }, display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', overflow: 'hidden', py: { md: 0, xs: 2 } }} >
 
         {/* Content Box */}
-        <Box className={'Home-Content-Box'} sx={{ width: '100%', height: '100%', minHeight: { md: 'unset', xs: '100vh' }, display: 'flex', flexDirection: { lg: 'row', xs: 'column' }, justifyContent: 'center', alignItems: 'center' }} >
-          <Typography sx={{ fontSize: '40px', lineHeight: '40px', fontFamily: ['sf-ui-display'], fontWeight: 700, mb: 4, display: { md: 'none', xs: 'block' }, textAlign: 'center', position: 'relative', zIndex: 2, }} >Lets hatch a plane</Typography>
+        <Box sx={{ width: '100%', height: '100%', minHeight: { md: 'unset', xs: '100vh' }, display: 'flex', flexDirection: { lg: 'row', xs: 'column' }, justifyContent: 'center', alignItems: 'center', position: 'absolute', zIndex: 1, px: { md: 0, xs: 3 } }} >
+          <Typography sx={{ fontSize: '40px', lineHeight: '40px', fontFamily: ['sf-ui-display'], fontWeight: 700, mb: 4, display: { md: 'none', xs: 'block' }, textAlign: 'center' }} >Lets hatch a plane</Typography>
 
 
           {/* Left Egg section */}
-          <Box sx={{ width: { sm: '50%', xs: '100px' }, display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', zIndex: 2, mb: { md: 0, xs: 3 } }} >
+          <Box sx={{ width: { sm: '50%', xs: '100px' }, display: 'flex', justifyContent: 'center', alignItems: 'center', mb: { md: 0, xs: 3 } }} >
             <Image src={'/svg/egg.svg'} width={400} height={427.4} objectFit='contain' />
           </Box>
 
 
 
           {/* Right Content Section */}
-          <Box sx={{ width: { md: '50%', xs: '100%' }, display: 'flex', justifyContent: 'center', alignItems: { md: 'start', xs: 'center' }, flexDirection: 'column', position: 'relative', zIndex: 2 }} >
+          <Box sx={{ width: { md: '50%', xs: '100%' }, display: 'flex', justifyContent: 'center', alignItems: { md: 'start', xs: 'center' }, flexDirection: 'column' }} >
             {/* For desktop */}
             <Typography sx={{ fontSize: '40px', lineHeight: '40px', fontFamily: ['sf-ui-display'], fontWeight: 700, display: { md: 'block', xs: 'none ' }, mb: 4 }} >Lets hatch a plane</Typography>
             <Box sx={{ width: { md: '80%', xs: '100%' }, height: '56px', border: '1px solid rgba(216, 216, 216, 1)', borderRadius: '18px', overflow: 'hidden', background: '#FFFFFF', boxShadow: '0px 4px 40px rgba(0, 0, 0, 0.25)' }} >
@@ -69,14 +69,14 @@ function Contact() {
 
 
         {/* Background Gradient spots */}
-        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: { md: '69px', xs: '-26px' }, top: { md: '100px', xs: '0px' }, backgroundColor: '#FE72A1',zIndex:2 }} ></Box>
+        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: { md: '69px', xs: '-26px' }, top: { md: '100px', xs: '0px' }, backgroundColor: '#FE72A1' }} ></Box>
         <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: { md: '400px', xs: '-120px' }, top: { md: '90px', xs: '-125px' }, backgroundColor: { md: '#FE72A1', xs: 'white' } }} ></Box>
         <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: '400px', top: '324px', backgroundColor: '#B4D8FC', display: { md: 'block', xs: 'none' } }} ></Box>
         <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: { md: '120px', xs: '-30px' }, top: { md: '324px', xs: '200px' }, backgroundColor: '#B4D8FC', }} ></Box>
         <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: { md: '0px', xs: '-95px' }, top: { md: '520px', xs: '440px' }, backgroundColor: '#FFB152', }} ></Box>
         <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: '480px', top: '500px', backgroundColor: '#FFB152', }} ></Box>
         <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', left: '440px', bottom: '-60px', backgroundColor: '#FC70E4', display: { md: 'block', xs: 'none' } }} ></Box>
-        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: { md: '60px', xs: '-80px' }, bottom: { md: '-30px', xs: '0px' }, backgroundColor: '#FC70E4'}} ></Box>
+        <Box className='grad' sx={{ width: { md: '220px', xs: '250px' }, height: { md: '220px', xs: '250px' }, position: 'absolute', right: { md: '60px', xs: '-80px' }, bottom: { md: '-30px', xs: '0px' }, backgroundColor: '#FC70E4' }} ></Box>
       </Box>
 
 
