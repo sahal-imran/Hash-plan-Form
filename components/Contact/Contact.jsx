@@ -19,19 +19,21 @@ function Contact() {
     Sey_UIUX(false);
     Set_Web(true);
   }
-  
+
 
   return (
     <>
       {/* Content Box */}
-      <Box id={'Contact-Content-Box'} sx={{ width: '100%', height:{md:'100vh'},minHeight:{md:'unset',xs:'100vh'}, display: 'flex', flexDirection: { md: 'row', xs: 'column' }, justifyContent: 'center', alignItems: 'center', background: 'transparent', px: { md: 0, xs: 3 }, py: { md: 0, xs: 2 } }} >
+      <Box id={'Contact-Content-Box'} sx={{ width: '100%', height: { md: '100vh' }, minHeight: { md: 'unset', xs: '100vh' }, display: 'flex', flexDirection: { md: 'row', xs: 'column' }, justifyContent: 'center', alignItems: 'center', background: 'transparent', px: { md: 0, xs: 3 }, py: { md: 0, xs: 2 } }} >
         <Typography sx={{ fontSize: '40px', lineHeight: '40px', fontFamily: ['sf-ui-display'], fontWeight: 700, mb: 4, display: { md: 'none', xs: 'block' }, textAlign: 'center' }} >Lets hatch a plane</Typography>
 
 
         {/* Left Egg section */}
         <Box sx={{ width: { sm: '50%', xs: '100px' }, display: 'flex', justifyContent: 'center', alignItems: 'center', mb: { md: 0, xs: 3 } }} >
           {/* <Image src={'/svg/egg.svg'} width={400} height={427.4} objectFit='contain' /> */}
-          <img id='egg2' src="/svg/egg.svg" alt="egg" style={{ width: '400px', height: '427.7px', objectFit: 'contain',position:'relative' }} />
+          <Box sx={{ width:{md:'400px',xs:'200px'}, height: {md:'427.7px',xs:'227'}, }} >
+            <img id='egg2' src="/svg/egg.svg" alt="egg" style={{ width: '100%', height: '100%', objectFit: 'contain', position: 'relative' }} />
+          </Box>
         </Box>
 
 
