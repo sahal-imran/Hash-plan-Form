@@ -34,7 +34,7 @@ function Home() {
               </Typography>
               <Box className={'EggBox'} sx={{ m: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '400px', height: '436.46px' }} >
                 <Box id='egg' >
-                  <Image src={'/svg/egg.svg'} width={100} height={100} objectFit='contain' />
+                  <Image src={'/svg/egg.svg'} width={120} height={120} objectFit='contain' />
                 </Box>
               </Box>
             </Box>
