@@ -14,10 +14,10 @@ const settings = {
   dots: true,
   infinite: true,
   autoplay: true,
-  speed: 1000,
+  speed: 2000,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3000,
   arrows: false
 };
 
@@ -25,23 +25,49 @@ function Home() {
   return (
     <>
       <Box className={'Home-Content-Box'} sx={{ width: '100%', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
-        <Typography variant='h1' sx={{ fontFamily: 'sf-ui-display', fontSize: { md: '50px', xs: '40px' }, lineHeight: '40px', fontWeight: '700', color: '#000000' }} >
-          Giving ideas life
-        </Typography>
         {/* Slider */}
-        <Box sx={{ width: { md: '260px', xs: '220px' }, height: { md: '394.46px', xs: '320px' }, my: 6 }} >
+        <Box sx={{ width: { md: '400px', xs: '100%' }, mb: 6 }} >
           <Slider style={{ width: '100%', height: '100%' }} {...settings}>
-            <Box sx={{ position: 'relative', width: '100%', height: '100%' }} >
-              <Image src={'/svg/carousal.svg'} width={260} height={394.46} objectFit='contain' />
+            <Box sx={{ position: 'relative', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
+              <Typography variant='h1' sx={{ fontFamily: 'sf-ui-display', fontSize: { md: '50px', xs: '40px' }, lineHeight: '40px', fontWeight: '700', color: '#000000', mb: 4, textAlign: 'center' }} >
+                Giving ideas life
+              </Typography>
+              <Box className={'EggBox'} sx={{ m: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '400px', height: '436.46px' }} >
+                {/* <Image src={'/svg/egg.svg'} width={120} height={120} objectFit='contain' /> */}
+                <img id='egg' src="/svg/egg.svg" alt="egg" style={{ width: '100px', height: '100px', objectFit: 'contain',position:'relative' }} />
+              </Box>
             </Box>
-            <Box sx={{ position: 'relative', width: '100%', height: '100%' }} >
-              <Image src={'/svg/carousal.svg'} width={260} height={394.46} objectFit='contain' />
+            <Box sx={{ position: 'relative', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
+              <Typography variant='h1' sx={{ fontFamily: 'sf-ui-display', fontSize: { md: '50px', xs: '40px' }, lineHeight: '40px', fontWeight: '700', color: '#000000', mb: 4, textAlign: 'center' }} >
+                Giving ideas life
+              </Typography>
+              <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }} >
+                <Image src={'/svg/icon_1.png'} width={360} height={436} objectFit='contain' />
+              </Box>
             </Box>
-            <Box sx={{ position: 'relative', width: '100%', height: '100%' }} >
-              <Image src={'/svg/carousal.svg'} width={260} height={394.46} objectFit='contain' />
+            <Box sx={{ position: 'relative', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
+              <Typography variant='h1' sx={{ fontFamily: 'sf-ui-display', fontSize: { md: '50px', xs: '40px' }, lineHeight: '40px', fontWeight: '700', color: '#000000', mb: 4, textAlign: 'center' }} >
+                Giving ideas life
+              </Typography>
+              <Box sx={{ m: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', }} >
+                <Image src={'/svg/icon_2.png'} width={360} height={436} objectFit='contain' />
+              </Box>
             </Box>
-            <Box sx={{ position: 'relative', width: '100%', height: '100%' }} >
-              <Image src={'/svg/carousal.svg'} width={260} height={394.46} objectFit='contain' />
+            <Box sx={{ position: 'relative', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
+              <Typography variant='h1' sx={{ fontFamily: 'sf-ui-display', fontSize: { md: '50px', xs: '40px' }, lineHeight: '40px', fontWeight: '700', color: '#000000', mb: 4, textAlign: 'center' }} >
+                Giving ideas life
+              </Typography>
+              <Box sx={{ m: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', }} >
+                <Image src={'/svg/icon_3_grey.png'} width={360} height={436} objectFit='contain' />
+              </Box>
+            </Box>
+            <Box sx={{ position: 'relative', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
+              <Typography variant='h1' sx={{ fontFamily: 'sf-ui-display', fontSize: { md: '50px', xs: '40px' }, lineHeight: '40px', fontWeight: '700', color: '#000000', mb: 4, textAlign: 'center' }} >
+                Giving ideas life
+              </Typography>
+              <Box sx={{ m: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', }} >
+                <Image src={'/svg/icon_3_purple.png'} width={360} height={436} objectFit='contain' />
+              </Box>
             </Box>
           </Slider>
         </Box>

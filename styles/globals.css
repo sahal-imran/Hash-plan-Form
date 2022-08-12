@@ -11,7 +11,8 @@ body {
 a {
   text-decoration: none;
 }
-.Home-Content-Box, #Contact-Content-Box {
+.Home-Content-Box,
+#Contact-Content-Box {
   background-image: url("/BGs/BG.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,8 +70,62 @@ input::placeholder {
   background: linear-gradient(180deg, #a196ff 0%, #5e46fe 100%);
   border-radius: 12px !important;
 }
+.EggBox {
+  background-image: url("/svg/EggBox.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#egg {
+  animation: bounce 3s infinite ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate3d(0, 80px, 0);
+    transform: translate3d(0, 80px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -50px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 80px, 0);
+    transform: translate3d(0, 80px, 0);
+  }
+}
+#egg2 {
+  animation: shake 2s infinite ease-in-out;
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  10% {
+    -webkit-transform: rotate(10deg);
+    top: -30px;
+  }
+  20% {
+    -webkit-transform: rotate(-10deg);
+  }
+  30% {
+    -webkit-transform: rotate(0);
+    top: 0px;
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+    top: -15px;
+  }
+  70% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    top: 0px;
+  }
+}
 @media screen and (max-width: 900px) {
-  .Home-Content-Box, #Contact-Content-Box {
+  .Home-Content-Box,
+  #Contact-Content-Box {
     background-image: url("/BGs/MobileBG.png");
   }
 }

@@ -9,7 +9,7 @@ function Contact() {
 
   const [UIUX, Sey_UIUX] = useState(false);
   const [Web, Set_Web] = useState(true);
-  const notify = () => toast.success('Successfully toasted!');
+  const notify = () => toast.success('Submission Successfully');
 
   const TRueUIUX = (val) => {
     Sey_UIUX(true);
@@ -19,6 +19,7 @@ function Contact() {
     Sey_UIUX(false);
     Set_Web(true);
   }
+  
 
   return (
     <>
@@ -29,7 +30,8 @@ function Contact() {
 
         {/* Left Egg section */}
         <Box sx={{ width: { sm: '50%', xs: '100px' }, display: 'flex', justifyContent: 'center', alignItems: 'center', mb: { md: 0, xs: 3 } }} >
-          <Image src={'/svg/egg.svg'} width={400} height={427.4} objectFit='contain' />
+          {/* <Image src={'/svg/egg.svg'} width={400} height={427.4} objectFit='contain' /> */}
+          <img id='egg2' src="/svg/egg.svg" alt="egg" style={{ width: '400px', height: '427.7px', objectFit: 'contain',position:'relative' }} />
         </Box>
 
 
