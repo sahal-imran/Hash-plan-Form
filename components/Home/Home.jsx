@@ -14,7 +14,7 @@ const settings = {
   dots: true,
   infinite: true,
   autoplay: true,
-  speed: 2000,
+  speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplaySpeed: 3000,
@@ -33,8 +33,9 @@ function Home() {
                 Giving ideas life
               </Typography>
               <Box className={'EggBox'} sx={{ m: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '400px', height: '436.46px' }} >
-                {/* <Image src={'/svg/egg.svg'} width={120} height={120} objectFit='contain' /> */}
-                <img id='egg' src="/svg/egg.svg" alt="egg" style={{ width: '100px', height: '100px', objectFit: 'contain',position:'relative' }} />
+                <Box id='egg' >
+                  <Image src={'/svg/egg.svg'} width={100} height={100} objectFit='contain' />
+                </Box>
               </Box>
             </Box>
             <Box sx={{ position: 'relative', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
@@ -42,7 +43,7 @@ function Home() {
                 Giving ideas life
               </Typography>
               <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }} >
-                <Image src={'/svg/icon_1.png'} width={400} height={436} objectFit='contain' />
+                <Image src={'/svg/icon_1.png'} priority width={400} height={436} objectFit='contain' />
               </Box>
             </Box>
             <Box sx={{ position: 'relative', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
@@ -50,7 +51,7 @@ function Home() {
                 Giving ideas life
               </Typography>
               <Box sx={{ m: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', }} >
-                <Image src={'/svg/icon_2.png'} width={400} height={436} objectFit='contain' />
+                <Image src={'/svg/icon_2.png'} priority width={400} height={436} objectFit='contain' />
               </Box>
             </Box>
             <Box sx={{ position: 'relative', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
@@ -58,7 +59,7 @@ function Home() {
                 Giving ideas life
               </Typography>
               <Box sx={{ m: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', }} >
-                <Image src={'/svg/icon_3_purple.png'} width={360} height={436} objectFit='contain' />
+                <Image src={'/svg/icon_3_purple.png'} priority width={360} height={436} objectFit='contain' />
               </Box>
             </Box>
           </Slider>

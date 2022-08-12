@@ -77,7 +77,7 @@ input::placeholder {
   background-position: center;
 }
 #egg {
-  animation: bounce 3s infinite ease-in-out;
+  animation: bounce 2.5s infinite ease;
 }
 @keyframes bounce {
   0% {
