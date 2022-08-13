@@ -63,7 +63,7 @@ function Contact() {
         <Box sx={{ width: '100%', height: '100px', display: 'flex', justifyContent: 'start', alignItems: 'center', px: { md: 4, xs: 2 } }} >
           <Link href={'/'} >
             <AnchorLink sx={{ textDecoration: 'none', cursor: 'pointer' }} >
-              <Image src={'/logo.png'} width={200} height={50} objectFit='contain' />
+              <Image src={'/logo.png'} priority width={200} height={50} objectFit='contain' />
             </AnchorLink>
           </Link>
         </Box>
